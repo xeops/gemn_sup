@@ -1,5 +1,7 @@
 FROM ubuntu:16.04
 
+RUN sudo add-apt-repository ppa:ondrej/php
+
 RUN apt-get update 
 RUN apt-get install -y openssh-server 
 RUN apt-get install -y supervisor
