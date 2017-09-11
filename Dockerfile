@@ -7,4 +7,7 @@ RUN apt-get install -y supervisor
 RUN apt-get install -y git
 RUN apt-get install -y gearman-job-server
 
+
+VOLUME ["/website_files"]
 EXPOSE 22 80 8000
+CMD ["sh", "/start.sh"]
