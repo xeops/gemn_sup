@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-RUN pt-get install software-properties-common
+RUN apt-get install software-properties-common
 
 RUN add-apt-repository ppa:ondrej/php
 
