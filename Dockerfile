@@ -9,6 +9,3 @@ RUN apt-get install -y gearman-job-server
 
 VOLUME ["/website_files"]
 EXPOSE 22 80 8000
-
-ADD start.sh /start.sh
-CMD ["sh", "/start.sh"]
